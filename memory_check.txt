@@ -1,0 +1,87 @@
+~/build-project-03-Desktop-Release > cat input.all.txt | valgrind --leak-check=summary ./project-03  
+==19929== Memcheck, a memory error detector
+==19929== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==19929== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==19929== Command: ./project-03
+==19929== 
+chores> Error: initialize priority list first.
+chores> Error: initialize priority list first.
+chores> New priority list with levels 1-100 initialized.
+chores> Error: it is not possible to create a priority list with 0 or less levels.
+chores> Error: the number of priority levels must be an integer larger than 0.
+chores> Error: it is not possible to create a priority list with 0 or less levels.
+chores> Error: priority level and chore description are missing.
+chores> Error: priority level must be an integer between 1-100.
+chores> Error: chore description is missing.
+chores> Error: priority level must be an integer between 1-100.
+chores> New chore added to priority level 1.
+chores> New priority list with levels 1-5 initialized.
+chores> New chore added to priority level 3.
+chores> Priority level 3:
+  1. do tomorrow's homework
+chores> New chore added to priority level 3.
+chores> New chore added to priority level 3.
+chores> New chore added to priority level 3.
+chores> New chore added to priority level 2.
+chores> New chore added to priority level 2.
+chores> New chore added to priority level 2.
+chores> New chore added to priority level 1.
+chores> New chore added to priority level 1.
+chores> New chore added to priority level 1.
+chores> Error: priority level must be an integer between 1-5.
+chores> Error: priority level must be an integer between 1-5.
+chores> Error: priority level must be an integer between 1-5.
+chores> Error: the number of priority levels must be an integer larger than 0.
+chores> Priority level 3:
+  1. do tomorrow's homework
+  2. empty the stinking garbage bin
+  3. feed the goldfish
+  4. buy toilet paper
+Priority level 2:
+  5. play pay the electricity bill
+  6. do vacuum cleaning
+  7. wash dishes
+Priority level 1:
+  8. play videogames
+  9. have a party
+  10. learn to parachute
+chores> chores> Priority level 3:
+  1. do tomorrow's homework
+  2. empty the stinking garbage bin
+  3. feed the goldfish
+  4. buy toilet paper
+Priority level 2:
+  5. play pay the electricity bill
+  6. wash dishes
+Priority level 1:
+  7. play videogames
+  8. have a party
+  9. learn to parachute
+chores> chores> empty the stinking garbage bin
+chores> feed the goldfish
+chores> buy toilet paper
+chores> play pay the electricity bill
+chores> Priority level 2:
+  1. wash dishes
+Priority level 1:
+  2. play videogames
+  3. have a party
+  4. learn to parachute
+chores> wash dishes
+chores> play videogames
+chores> chores> chores> --- no chores left ---
+chores> chores> ==19929== 
+==19929== HEAP SUMMARY:
+==19929==     in use at exit: 72,704 bytes in 1 blocks
+==19929==   total heap usage: 77 allocs, 76 frees, 80,353 bytes allocated
+==19929== 
+==19929== LEAK SUMMARY:
+==19929==    definitely lost: 0 bytes in 0 blocks
+==19929==    indirectly lost: 0 bytes in 0 blocks
+==19929==      possibly lost: 0 bytes in 0 blocks
+==19929==    still reachable: 72,704 bytes in 1 blocks
+==19929==         suppressed: 0 bytes in 0 blocks
+==19929== Rerun with --leak-check=full to see details of leaked memory
+==19929== 
+==19929== For counts of detected and suppressed errors, rerun with: -v
+==19929== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

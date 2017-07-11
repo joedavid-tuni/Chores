@@ -1,6 +1,3 @@
-/* Name: Joe David
- * Emal: joe.david@student.tut.fi
- * Student Ref: 267598 */
 
 #include "priorityqueue.h"
 

@@ -1,6 +1,4 @@
-/* Name: Joe David
- * Emal: joe.david@student.tut.fi
- * Student Ref: 267598 */
+
 
 #ifndef CHORES_H
 #define CHORES_H

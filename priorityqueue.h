@@ -1,6 +1,4 @@
-/* Name: Joe David
- * Emal: joe.david@student.tut.fi
- * Student Ref: 267598 */
+
 
 #ifndef PRIORITYQUEUE_H
 #define PRIORITYQUEUE_H
